@@ -32,3 +32,5 @@ override.tf.json
 # Ignore CLI configuration files
 .terraformrc
 terraform.rc
+my-key-ec2.pem
+.terraform.lock.hcl
