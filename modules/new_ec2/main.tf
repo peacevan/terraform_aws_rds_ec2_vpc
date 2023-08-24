@@ -1,5 +1,5 @@
 
-resource "aws_instance" "pizzaria_ec2" {
+resource "aws_instance" "new_ec2" {
   ami           = data.aws_ami.ubuntu.id
   instance_type = "t2.micro"
   key_name =    var.key_name //"my-key-ec2" # Insira o nome da chave criada antes.
@@ -8,20 +8,20 @@ resource "aws_instance" "pizzaria_ec2" {
   associate_public_ip_address = true
 
   tags = {
-    Name = "pizzaria_ec2"
+    Name = "new_ec2"
     # Insira o nome da instância de sua preferência.
   }
 }
 
 resource "aws_eip" "_" {
-  vpc      = true
-  instance = aws_instance._.id
+  //vpc      = true
+  instance = aws_instance.new_ec2.id
 }
-
+/*
 resource "tls_private_key" "_" {
   algorithm = "RSA"
   rsa_bits  = 4096
-}
+}*/
 /*
 resource "aws_key_pair" "_" {
   key_name   = var.key_name

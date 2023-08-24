@@ -30,7 +30,7 @@ variable "ami_key_pair_name" {
 }
 
 variable "key_name" {
-        default = "my-key-ec2"
+        default = "mykey"
 }
 
 # colect date  from AWS AMI 
@@ -62,5 +62,4 @@ variable "tcb_blog_subnet_public_id" {
 
 variable "vpc_id" {}
 variable "subnet_ids" {}
-variable "rds_port" {}
 
