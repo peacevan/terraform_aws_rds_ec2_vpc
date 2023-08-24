@@ -22,6 +22,12 @@ module "new-vpc" {
   vpc_cidr_block = var.vpc_cidr_block
 }
 
+module "new-rds-mysql" {
+  source     = "./modules/rds-mysql"
+  vpc_id     = module.new-vpc.vpc_id
+  subnet_ids = module.new-vpc.subnet_ids
+}
+
 module "new-ec2" {
   source     = "./modules/ec2"
   vpc_id     = module.new-vpc.vpc_id

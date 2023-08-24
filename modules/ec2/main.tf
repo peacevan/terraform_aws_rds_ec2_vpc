@@ -9,7 +9,7 @@ resource "aws_instance" "pizzaria_ec2" {
 
   tags = {
     Name = "pizzaria_ec2"
- # Insira o nome da instância de sua preferência.
+    # Insira o nome da instância de sua preferência.
   }
 }
 
@@ -48,6 +48,14 @@ resource "aws_security_group" "permitir_ssh_http" {
     from_port   = 80
     to_port     = 80
     protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+
+  ingress {
+    from_port   = 443
+    to_port     = 443
+    protocol    = "tcp"
+    description = "HTTPS"
     cidr_blocks = ["0.0.0.0/0"]
   }
 
