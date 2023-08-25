@@ -33,7 +33,7 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 <!---Estes são apenas requisitos de exemplo. Adicionar, duplicar ou remover conforme necessário--->
 * Você instalou o  `terraform em seu computador`
 * Você instalou e configurou `AWS CLI em seu computador`
-* Você leu `<guia / link / documentação_relacionada_ao_projeto>`.
+* Você leu `https://medium.com/@peacevan/provisionando-uma-vpc-inst%C3%A2ncia-ec2-e-rds-mysql-usando-terraform-d655a93c3ba4`.
 
 ## 🚀 Instalando terraform_aws_rds_ec2_vpc
 
