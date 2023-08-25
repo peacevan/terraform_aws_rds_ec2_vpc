@@ -7,7 +7,7 @@
 
 <img src="img/rds.png" alt="diagrama da infra estrutura">
 
-<img src="img/ec2.png" alt="diagrama da infra estrutura">
+<img src="img/EC2.png" alt="diagrama da infra estrutura">
 
 
 >  criando uma  VPC uma instancia EC2 e um banco de dados RDS (Mysql) na AWS com terraform,
