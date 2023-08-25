@@ -2,11 +2,12 @@
 
 <!---Esses são exemplos. Veja https://shields.io para outras pessoas ou para personalizar este conjunto de escudos. Você pode querer incluir dependências, status do projeto e informações de licença aqui--->
 
+<img src="img/diagram.png" alt="diagrama da infra estrutura">
 <img src="img/vpc.png" alt="diagrama da infra estrutura">
 
 <img src="img/rds.png" alt="diagrama da infra estrutura">
 
-<img src="img/png.png" alt="diagrama da infra estrutura">
+<img src="img/ec2.png" alt="diagrama da infra estrutura">
 
 
 >  criando uma  VPC uma instancia EC2 e um banco de dados RDS (Mysql) na AWS com terraform,
